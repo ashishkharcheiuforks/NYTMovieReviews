@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NYT Movie Reviews</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NYT Movie Reviews</string>
+    <string name="nav_header_subtitle">Testing Android Arch Components</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_all_rating">All Ratings</string>
+    <string name="action_g_rating">G</string>
+    <string name="action_pg_rating">PG</string>
+    <string name="action_pg13_rating">PG-13</string>
+    <string name="action_r_rating">R</string>
+
+    <string name="menu_home">Home</string>
+    <string name="communicate_text">Communicate</string>
+    <string name="action_search">Enter Search Terms</string>
+    <string name="search_hint">Enter search terms</string>
+    <string name="browse_image_description">Photos</string>
+    <string name="empty_photo">No image url found</string>
+    <string name="mpaa_rating">Movie Rating: %1$s</string>
+    <string name="publication_date">Publication Date: %1$s</string>
+    <string name="placeholder_text">Select movie rating from top left menu</string>
+    <string name="byline">Reviewed by: %1$s</string>
+    <string name="internet_connected">Internet Connected</string>
+    <string name="no_network_error">No network available, please check your WiFi or Data connection</string>
+    <string name="no_internet_error">No internet available, please check your connected WIFi or Data</string>
+    <string name="no_more_results">No more Dvd picks for this movie rating</string>
+</resources>

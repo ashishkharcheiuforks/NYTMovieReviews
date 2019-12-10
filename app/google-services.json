@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "123456789012",
+    "firebase_url": "https://nytmoviereviews-565cc.firebaseio.com",
+    "project_id": "nytmoviereviews-565cc",
+    "storage_bucket": "nytmoviereviews-565cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456789012:android:randomalphanumericstring",
+        "android_client_info": {
+          "package_name": "com.omermuhammed.nytmoviereviews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123456789012-randomalphanumericstring.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "<api-key>"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123456789012-randomalphanumericstring.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456789012:android:randomalphanumericstring",
+        "android_client_info": {
+          "package_name": "com.omermuhammed.nytmoviereviews.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123456789012-randomalphanumericstring.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "<api-key>"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123456789012-randomalphanumericstring.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

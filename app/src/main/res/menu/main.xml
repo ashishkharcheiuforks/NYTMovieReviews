@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_allratings_selected"
+        android:orderInCategory="101"
+        android:title="@string/action_all_rating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_g_selected"
+        android:orderInCategory="102"
+        android:title="@string/action_g_rating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_pg_selected"
+        android:orderInCategory="103"
+        android:title="@string/action_pg_rating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_pg13_selected"
+        android:orderInCategory="104"
+        android:title="@string/action_pg13_rating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_r_selected"
+        android:orderInCategory="105"
+        android:title="@string/action_r_rating"
+        app:showAsAction="never" />
+</menu>
