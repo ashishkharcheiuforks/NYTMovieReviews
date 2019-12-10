@@ -1,7 +1,7 @@
 # NYTimesMovieReview
 This application is my attempt at [Android Architecture Components][aacusage] usage.
 
-![App Screenshot](screenshots/home_screen.png "NYTimes Movie Reviews")
+<img src="screenshots/home_screen.png" width="200" height="400"/>
 
 I wanted to test out AAC and Kotlin Coroutines using NYTimes API. You will need to register [here][nytimesapi] and get your own api key for this app to work.
 
