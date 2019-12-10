@@ -13,25 +13,16 @@ App does dependency injection differently, using ActivityLifecycleCallbacks, sim
 
 Make sure to edit [native-lib.cpp][sofile] to add your NY Times API key.
 
-### Architecture Components
 This application implements the following concepts :
-- ViewModel
-- LiveData
-- Room
-- Navigation Drawer
+- Single Activity and multiple fragments setup
+- ViewModels and ViewModelScope usage
+- Using LiveData and MutableLiveData for handling network/database requests
+- Room for network call response storage
+- Navigation component for navigation graph and navigation drawer
+- Kotlin coroutines usage with suspend keyword
+- DI with Dagger 2, using ActivityLifecycleCallbacks 
 
-### Libraries
-* [Android Architecture Components][arch]
-* [Kotlin Coroutines][coroutines]
-* [Dagger 2][dagger2] for dependency injection
-* [Retrofit][retrofit] for REST api communication
-* [Glide][glide] for image loading
 
-[arch]: https://developer.android.com/arch
-[coroutines]: https://developer.android.com/kotlin/coroutines
-[dagger2]: https://google.github.io/dagger
-[retrofit]: http://square.github.io/retrofit
-[glide]: https://github.com/bumptech/glide
 [aacsampleapp]: https://github.com/android/architecture-components-samples/tree/master/GithubBrowserSample
 [sofile]: https://github.com/omermuhammed/NYTMovieReviews/blob/master/app/src/main/cpp/native-lib.cpp
 [aacusage]: https://developer.android.com/topic/libraries/architecture/guide.html
