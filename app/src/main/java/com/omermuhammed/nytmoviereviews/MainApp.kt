@@ -2,13 +2,10 @@ package com.omermuhammed.nytmoviereviews
 
 import android.app.Application
 import android.content.Context
-import com.crashlytics.android.Crashlytics
 import com.omermuhammed.nytmoviereviews.di.AppInjector
-import com.omermuhammed.nytmoviereviews.utils.CrashReportingTree
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
-import io.fabric.sdk.android.Fabric
 import timber.log.Timber
 import javax.inject.Inject
 

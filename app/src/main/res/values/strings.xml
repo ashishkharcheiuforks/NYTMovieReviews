@@ -25,4 +25,5 @@
     <string name="no_network_error">No network available, please check your WiFi or Data connection</string>
     <string name="no_internet_error">No internet available, please check your connected WIFi or Data</string>
     <string name="no_more_results">No more Dvd picks for this movie rating</string>
+    <string name="splash_screen">Splash Screen</string>
 </resources>
