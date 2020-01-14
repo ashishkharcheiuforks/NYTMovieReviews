@@ -9,7 +9,7 @@ App uses a shared object library, to save the NY Times API key, to make it diffi
 
 Because I wanted this app to be as production ready as possible I integrated Crashlytics (will need google-services.json from your Firebase account), setup build variants for debug and release builds, and setup signing for the app with a local.properties file holding the passwords (obviously not checked in). The app also supports different icons and app identifiers, for debug and release builds. This allows us to install debug and release builds on same device, useful in testing.
 
-App does dependency injection differently, using ActivityLifecycleCallbacks, similar to what is done in [AAC sample apps][aacsampleapp]. Lastly I used the navigation component library because I wanted the nav graph, and a drawer menu so that I can add new feature there. It also allows easy way to propagate fragment arguments.
+App does dependency injection differently, using ActivityLifecycleCallbacks, similar to what is done in [AAC sample apps][aacsampleapp]. Lastly I used the navigation component library because I wanted the nav graph (very useful for passing arguments to fragments), and a drawer menu so that I can add new features there.
 
 Make sure to edit [native-lib.cpp][sofile] to add your NY Times API key.
 
