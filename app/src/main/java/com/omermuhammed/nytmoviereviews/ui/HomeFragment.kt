@@ -6,7 +6,6 @@ import android.widget.ProgressBar
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,23 +13,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.omermuhammed.nytmoviereviews.R
 import com.omermuhammed.nytmoviereviews.adapter.MovieReviewsAdapter
-import com.omermuhammed.nytmoviereviews.di.Injectable
 import com.omermuhammed.nytmoviereviews.network.Resource
 import com.omermuhammed.nytmoviereviews.utils.AppUtils.Companion.MpaaRating
 import com.omermuhammed.nytmoviereviews.utils.INITIAL_OFFSET
 import com.omermuhammed.nytmoviereviews.utils.OFFSET_INCREMENT
 import com.omermuhammed.nytmoviereviews.utils.autoCleared
 import com.omermuhammed.nytmoviereviews.viewmodel.HomeViewModel
-import javax.inject.Inject
 
-class HomeFragment : Fragment(), Injectable {
+class HomeFragment : Fragment() {
 
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
-
-    private val homeViewModel: HomeViewModel by viewModels {
-        viewModelFactory
-    }
+    private lateinit var homeViewModel: HomeViewModel
 
     private lateinit var recyclerView: RecyclerView
 
@@ -61,6 +53,8 @@ class HomeFragment : Fragment(), Injectable {
     ): View? {
 
         val root: View = inflater.inflate(R.layout.fragment_home, container, false)
+
+        homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         recyclerView = root.findViewById(R.id.moviereviews_recyclerview)
 
@@ -193,34 +187,6 @@ class HomeFragment : Fragment(), Injectable {
             }
             else -> super.onOptionsItemSelected(item)
         }
-
-        // leaving this code snippet here as it shows a clean way to add search in action bar
-        // this will allow us to implement search feature with /search.json endpoint
-        /*
-        val searchView: SearchView = menu.findItem(R.id.action_search).actionView as SearchView
-        searchView.queryHint = getResources().getString(R.string.search_hint)
-        searchView.isIconified = true
-
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(str: String): Boolean {
-                Timber.tag(TIMBER_TAG).e("search word(s): %s", str)
-                searchView.clearFocus()
-                searchView.isIconifiedByDefault = true
-
-                getMovieReviewsData()
-
-                placeholderText.visibility = View.GONE
-                recyclerView.visibility = View.VISIBLE
-
-                initMovieReviewsList()
-                return true
-            }
-
-            override fun onQueryTextChange(newText: String): Boolean {
-                return false
-            }
-        })
-        */
     }
 
     private fun requestDvdPicks() {

@@ -12,15 +12,4 @@ interface ApiInterface {
         @Query("order") order: String = DVD_PICKS_ORDER,
         @Query("offset") offset: Int
     ): Response<DvdPickResults>
-
-    // leaving this code snippet here as it shows a clean way to add search in action bar
-    // this will allow us to implement search feature with /search.json endpoint
-    /*
-    @GET("reviews/search.json")
-    suspend fun getSearchResults (
-        @Query("order") order: String = DVD_PICKS_ORDER,
-        @Query("query") searchTerm: String,
-        @Query("offset") offset: Int
-    ): Response<DvdPickResults>
-     */
 }

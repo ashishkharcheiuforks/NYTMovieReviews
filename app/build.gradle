@@ -137,11 +137,11 @@ dependencies {
 
     // 3rd Party Libraries
     // Dagger
-    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
-    kapt "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
-    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
-    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
-    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+//    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+//    kapt "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+//    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+//    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+//    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
 
     // Retrofit, Okhttp
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
